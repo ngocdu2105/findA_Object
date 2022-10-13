@@ -10,7 +10,6 @@ class config_grasp:
         # self.modelCascadeMaskRCNN='model\casdemask_rcnn224.onnx'
         # self.infer_cfg='model\infer_cfg_cascade_mask_crnn.yml'
         self.colors = [(255, 255, 0), (0, 255, 0), (0, 255, 255), (255, 0, 0)]
-        self.OxyChessboard='model/data.npy'
         self.INPUT_WIDTH = 640
         self.INPUT_HEIGHT = 640
         self.SCORE_THRESHOLD = 0.2
