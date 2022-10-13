@@ -23,7 +23,7 @@ class Calibrator(config_grasp):
             corners2 = cv2.cornerSubPix(gray, corners, (11,11),(-1,-1), criteria)
             self.imgpoints=corners2.reshape(-1,2)
         corners2=corners2.reshape(-1,2)
-        pointOxy=np.load(os.path.join(os.path.dirname(__file__),self.OxyChessboard))
+        
         pointOxy=corners2[3]
         # self.img=cv2.circle(self.img,pointOxy.astype('int'),3,(255,0,0),2)
         self.ori_oxy= np.argmin(abs(self.imgpoints-pointOxy),axis=0)[0]
